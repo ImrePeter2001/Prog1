@@ -6,8 +6,8 @@
 
 using namespace std;
 
-template<typename Iterator>
-void increase(Iterator first, Iterator last, int number)
+template<typename I>
+void increase(I first, I last, int number)
 {
 	while(first!=last)
 	{
