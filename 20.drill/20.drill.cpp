@@ -43,16 +43,18 @@ int main()
 
 	int value=3;
 	int value2=27;
-
+	
+	//vector<int>::iterator place;
 	auto place=find(int_vec.begin(), int_vec.end(), value);
 	if (place!=int_vec.end())
-        cout<<"Value found at: " <<distance(int_vec.begin(), place)<<endl;
-    else
-        cout<<"Value is not found."<<endl;
-
-    auto place2=find(int_list.begin(), int_list.end(), value2);
-    if (place2!=int_list.end())
-        cout<<"Value2 is found at: "<<distance(int_list.begin(), place2)<<endl;
-    else
-        cout<<"Value2 is not found."<<endl;
+        	cout<<"Value found at: " <<distance(int_vec.begin(), place)<<endl;
+    	else
+        	cout<<"Value is not found."<<endl;
+	
+	//list<int>::iterator place2;
+   	auto place2=find(int_list.begin(), int_list.end(), value2);
+    	if (place2!=int_list.end())
+        	cout<<"Value2 is found at: "<<distance(int_list.begin(), place2)<<endl;
+    	else
+        	cout<<"Value2 is not found."<<endl;
 }	
